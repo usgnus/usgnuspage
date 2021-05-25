@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twittler</title>
+    <link rel="stylesheet" href="twittler.css">
+</head>
+<body>
+    
+    
+    <div id="container">
+
+        <header class="header">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="twittler.html"><img src="wlogo.png" id="logo"></a></li>
+                    <li><a href="../myPortfolio.html"><img src="himg.png" class ="nav-img"></a></li>
+                    <li><a href="../mywork.html"><img src="bckmages.png" class="nav-img" ></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <main class="main">
+            <div>
+                <div class="subject">
+                    Home
+                </div>
+                <div class="form">
+                    UserName
+                    <br>
+                   
+                    <span id="check-id" >
+                        <span class="checkmark"></span>
+                    </span>
+                    
+                    <input name="abc" type="text" value="" id="input-name" placeholder="4글자 이상 입력하세요"/><br>
+
+                    Comment<br>
+                    <textarea name="comment
+                    " id="input-comment" cols="40" rows="3" placeholder="It's Awsome!"></textarea><br>
+                    <div calss="tweet-button">
+                        <button class="tweetbutton" disabled = 'disabled'>tweet!</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="checkbox">
+                    <button class="checkbutton" onClick="window.location.reload()">Delete Last Tweet</button>
+                </div>
+                <ul class="section-sub"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

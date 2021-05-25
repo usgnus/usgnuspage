@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+/* main container */
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* header */
+
+.headContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* banner */
+
+
+/* info */
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.infoContainerTitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.infoContainerTitle:first-child {
+  margin-top: 0px;
+}
+
+.infoContaineItems {
+  font-size: 16px;
+}
+
+.imgContainer {
+  display: none;
+}
+/* footer */
+
+.footer {
+  font-size: 10px;
+}
