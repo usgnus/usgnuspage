@@ -41,3 +41,9 @@ function printImg() {
 } 
 
 setInterval(printImg, 3000);
+
+/** https://im-developer.tistory.com/97
+  슬라이드 만들기
+ */
+
+
