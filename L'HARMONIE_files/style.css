@@ -34,22 +34,20 @@ ul,li{
 }
 
   .slide{
-    height: 740px;;
-    overflow:hidden;
+    height:300px;overflow:hidden;
   }
 
   .slide ul{
-    padding-left: 0px;
     width:calc(100% * 4);
     display:flex;
-    animation:slide 12s infinite;
+    animation:slide 8s infinite;
   } /* slide를 8초동안 진행하며 무한반복 함 */
 
   .slide li{
     width:calc(100% / 4);
-    height: 740px;
-    object-fit: fill;
+    height:300px;
   }
+}
   
   @keyframes slide {
     0% {margin-left:0;} /* 0 ~ 10  : 정지 */
