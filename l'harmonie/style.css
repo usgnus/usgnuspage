@@ -27,11 +27,6 @@ ul,li{
 
 /* banner */
 
-#img {
-  width: 1080px;
-  height: 740px;
-  object-fit: fill;
-}
 
   .slide{
     height: 740px;;
@@ -50,6 +45,14 @@ ul,li{
     height: 740px;
     object-fit: fill;
   }
+  .slide li img {
+  width: 1080px;
+  height: 740px;
+  object-fit: fill;
+  }
+
+  
+  
   
   @keyframes slide {
     0% {margin-left:0;} /* 0 ~ 10  : 정지 */

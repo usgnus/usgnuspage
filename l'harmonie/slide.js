@@ -21,6 +21,7 @@ function pushLi() {
     fildUl.appendChild(li);
     const img = document.createElement('img');
     li.appendChild(img);
+    img.classList.add = ('img');
     img.setAttribute('src', IMAGES[i])
   }
 }
