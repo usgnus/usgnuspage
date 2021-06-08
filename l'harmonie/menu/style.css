@@ -2,41 +2,45 @@ body{
     margin:0;
     
   }
-  a {
-    color:black;
-    text-decoration: none;
-  }
+a {
+  color:black;
+  text-decoration: none;
+}
 
-  h3{
-    text-align: center;
-    border-bottom: 1px solid gray;
-    padding-bottom: 20px;
-    margin: 0px;
-  }
+ul,li {
+  list-style: none;
+}
 
-  #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    border-bottom: 1px solid gray;
-  }
+h3{
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  margin: 0px;
+}
 
-  ul{
-    border-right: 1px solid gray;
-    width: 100px;
-    margin: 0px;
-    padding: 20px;
-    padding-right: 0px;
-  }
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  border-bottom: 1px solid gray;
+}
 
-  address{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: initial;
-  }
+ul{
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0px;
+  padding: 20px;
+  padding-right: 0px;
+}
 
-  #grid #article{
-    padding-left: 20px;
-  }
+address{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: initial;
+}
 
-  .topline{
-    border-top: 1px solid gray;
-  }
+#grid #article{
+  padding-left: 20px;
+}
+
+.topline{
+  border-top: 1px solid gray;
+}

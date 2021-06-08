@@ -1,14 +1,25 @@
+:root {
+  --default-color : #f0f4f5;
+}
+
+
+
 html, body{ 
   box-sizing: border-box; 
   padding: 0; 
   margin: 0; 
   text-align: center;
+  font-family: 'Source Sans Pro';
 }
 
 ul,li{
   list-style:none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--default-color);
+}
 /* main container */
 
 .Container{
@@ -17,13 +28,91 @@ ul,li{
   box-sizing: border-box;
 }
 
-/* header */
+/* header navigation  */
 
-.headContainer{
+.nav_bar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background-color: #49754C;
+  padding: 8px 12px;
 }
+
+.nav_logo{
+  font-size: 24px;
+}
+
+.nav_menu {
+  display: flex;  
+}
+
+.nav_menu li {
+  padding: 8px 12px;
+}
+
+.nav_bar li:hover {
+  background-color: #335035;
+  border-radius: 4px;
+}
+.nav_icons {
+  color: var(--default-color);
+  display:flex;
+}
+
+.nav_bar li {
+  padding: 8px 12px;
+}
+
+.nav_toggle {
+  display: none;
+  position:absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #335035;
+}
+
+/* 반응형 웹 width 줄어들 경우 바뀌는 화면 */
+
+@media screen and (max-width:768px) {
+  .nav_bar {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 24px;
+  }
+
+  .nav_bar ul {
+    padding-left: 0px;
+    display: none;
+  }
+
+  .nav_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav_toggle {
+    display: block;
+  }
+
+  .nav_menu.active,
+  .nav_icons.active {
+    display: flex;
+  }
+
+}
+  
+
 
 /* banner */
 
@@ -31,9 +120,11 @@ ul,li{
   .slide{
     height: 740px;;
     overflow:hidden;
+;
   }
 
   .slide ul{
+    margin-top: 0px;
     padding-left: 0px;
     width:calc(100% * 4);
     display:flex;
@@ -46,8 +137,8 @@ ul,li{
     object-fit: fill;
   }
   .slide li img {
-  width: 1080px;
-  height: 740px;
+  width: 100%;
+  height: 100%;
   object-fit: fill;
   }
 
@@ -66,33 +157,6 @@ ul,li{
     100% {margin-left:0;}
   }
 
-/* info */
-
-.infoContainer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.infoContainerTitle {
-  display: block;
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.infoContainerTitle:first-child {
-  margin-top: 0px;
-}
-
-.infoContaineItems {
-  font-size: 16px;
-}
-
-.imgContainer {
-  display: none;
-}
 /* footer */
 
 .footer {

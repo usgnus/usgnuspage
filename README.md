@@ -1,4 +1,4 @@
 # This is my page
 
-[hello](index.html)
+[hello](usgnus.github.io)
 
