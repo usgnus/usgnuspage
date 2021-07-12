@@ -1,0 +1,39 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+}
+
+/* container */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* logo-box */
+.logo-box {
+  background-color: aqua;
+}
+
+/* sub-box */
+
+.sub-box {
+  background-color: aquamarine;
+}
+
+/* item-box */
+
+.item-box {
+  background-color: blueviolet;
+  display: flex;
+}
+
+.items {
+  border: solid 1px white;
+}

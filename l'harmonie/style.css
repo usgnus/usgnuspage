@@ -54,6 +54,11 @@ a {
   background-color: #335035;
   border-radius: 4px;
 }
+
+.nav_menu a :hover {
+  color :olivedrab;
+}
+
 .nav_icons {
   color: var(--default-color);
   display:flex;
@@ -73,10 +78,9 @@ a {
 
 /* 반응형 웹 width 줄어들 경우 바뀌는 화면 */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:860px) {
   .nav_bar {
   flex-direction: column;
-  align-items: flex-start;
   padding: 8px 24px;
   }
 
@@ -84,6 +88,7 @@ a {
     padding-left: 0px;
     display: none;
   }
+
 
   .nav_menu {
     flex-direction: column;

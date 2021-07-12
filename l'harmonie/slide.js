@@ -27,6 +27,3 @@ function pushLi() {
 }
 
 pushLi();
-
-
-console.log(slide)
