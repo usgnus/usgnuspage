@@ -1,0 +1,91 @@
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  padding:0;
+}
+
+/* container */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+.header {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 4fr;
+}
+
+/* logo */
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* sub-box */
+
+.sub-box {
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, black, gray);
+}
+
+.sub {
+  place-items: center;
+  font-weight: bold;
+  font-size: 4rem;
+  padding-top: 3rem
+}
+
+
+
+/* item-box */
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px gray;
+}
+
+.titles {
+  display: flex;
+  color: #000000;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .texts {
+  padding: 1rem;
+  text-align: center;
+  height: 8rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color:white;
+} */
