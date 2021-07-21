@@ -8,6 +8,10 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* container */
 
 .container {
@@ -52,14 +56,13 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  grid-auto-rows: minmax(200px, auto);
+  width: 60rem;
 }
 
 .items {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  border: solid 1px white;
+  border: solid 1px gray;
 }
 
 .titles {
@@ -76,7 +79,10 @@ body {
 }
 
 .texts {
+  padding: 1rem;
   text-align: center;
+  height: 8rem;
   padding-top: 2rem;
   font-size: 1.2rem;
+  color:white;
 }
